@@ -3,7 +3,7 @@
 
 <head>
   <title>
-    Bulletin Board
+    Home-Bulletin Board
   </title>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 
@@ -12,6 +12,7 @@
 <body>
   <div id='background'>
     <img src="../images/vincent-van-zalinge-387887-unsplash.jpg" class="stretch" />
+
   </div>
 
   <header>
@@ -24,18 +25,20 @@
     </div>
   </header>
   <div class='middle'>
-  <section id='printing'>
+    <section id='printing'>
 
-    <% for(let i = data.length-1; i >= 0; i--) { %>
-<div id='post'>
-    <h2><%= data[i].title %> </h2>
-    <p><%= data[i].body %> </p>
-    ---------------------------------------
+      <% for(let i = data.length-1; i >= 0; i--) { %>
+      <div id='post'>
+        <h2><%= data[i].title %> </h2>
+        <p style="white-space:pre-line">
+          <%= data[i].body %>
+        </p>
+        ---------------------------------------
+      </div>
+      <% } %>
+
+    </section>
   </div>
-    <% } %>
-
-  </section>
-</div>
   <footer>
     created by: Baukje Knol
   </footer>
