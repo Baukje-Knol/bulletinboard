@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Bulletin Board
+  </title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+
+<body>
+  <div id='background'>
+    <img src="../images/vincent-van-zalinge-387887-unsplash.jpg" class="stretch" />
+
+  </div>
+
+  <header>
+    <h1> Add a message </h1>
+    <div class="navbar">
+      <ul>
+        <li> <a href="/">Home</a></li>
+        <li> <a href="addpost">Add Post</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class='middle'>
+
+    <form action="/addpost" method="post">
+      <h3>Title </h3>
+      <textarea rows="2" columns="50" type="text" id="textinput"  required placeholder="Write something.."  maxlength="1000" name="message" autocomplete="off"></textarea>
+      <!-- <input type "text" id = "title" placeholder="Write something.." autocomplete="off" name = "title"> -->
+      <br>
+      <h3> Body </h3>
+      <textarea rows="10" columns="50" type="text" id="textinput"  required placeholder="Write something.."  maxlength="1000" name="message" autocomplete="off"></textarea>
+      <!-- <input type "text" id = "body" textarea rows="5" columns="10" placeholder="Write something.." autocomplete = "off" name = "body"> -->
+      <br>
+      <input type = "submit" value = "Submit">
+
+
+
+    </form>
+
+  </div>
+
+  <footer>
+    created by: Baukje Knol
+  </footer>
+
+</body>
+
+</html>
